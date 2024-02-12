@@ -10,10 +10,10 @@
 
 if [ -z "$CUSTOM_URL" ]; then
     HOST_URL="localhost"
-    HOST_PORT="3000"
+    HOST_PORT="12000"
 elif [[ ! $CUSTOM_URL =~ :[0-9]+$ ]]; then
     HOST_URL="$CUSTOM_URL"
-    HOST_PORT="3000"
+    HOST_PORT="12000"
 elif [[ $CUSTOM_URL =~ :([0-9]+)$ ]]; then
     HOST_URL="${CUSTOM_URL%:*}"
     HOST_PORT="${BASH_REMATCH[1]}"
