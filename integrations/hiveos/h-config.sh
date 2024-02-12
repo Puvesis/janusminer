@@ -37,7 +37,7 @@ else
 fi
 
 conf=""
-conf+="-h $HOST_URL -p $HOST_PORT -a $WALLET -u $USER"
+conf+="-h $HOST_URL"
 
 [[ ! -z $CUSTOM_USER_CONFIG ]] && conf+=" $CUSTOM_USER_CONFIG"
 
